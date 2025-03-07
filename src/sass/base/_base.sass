@@ -1,0 +1,14 @@
+*, ::after, ::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-weight: bold
+    font-size: 1.111112vh // 10px при view-width = 900 px 
+    background: #fbfbfb
+
+.container
+    display: grid
+    grid-template-rows: [header] 90rem [intro] 70rem [about] 43.5rem [cards] 135rem [feedback] 65rem [footer] 27.5rem
+    grid-template-columns: [full-start] repeat(2, minmax(min-content, 1fr)) [full-end]

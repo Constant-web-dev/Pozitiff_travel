@@ -1,0 +1,65 @@
+@font-face 
+    font-family: 'social-networks'
+    src: local('social-networks'), url('../fonts/social-networks.woff') format('woff'), url('../fonts/social-networks.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+@font-face 
+    font-family: 'Joti One'
+    src: local('Joti One'), url('../fonts/JotiOne-Regular.woff2') format('woff2'), url('../fonts/JotiOne-Regular.woff') format('woff'), url('../fonts/JotiOne-Regular.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+@font-face 
+    font-family: 'Shantell Sans'
+    src: local('Shantell Sans Bold'), local('ShantellSans-Bold'), url('../fonts/ShantellSans-Bold.woff2') format('woff2'), url('../fonts/ShantellSans-Bold.woff') format('woff'), url('../fonts/ShantellSans-Bold.ttf') format('truetype')
+    font-weight: bold
+    font-style: normal
+    font-display: swap
+
+.title-first
+    &_main, &_secondary
+        display: block
+        font-family: $font-brand
+        font-weight: normal
+        font-size: 9.6rem
+        line-height: 100%
+        color: $color-dark-blue
+
+    &_description
+        display: block
+        font-family: $font-main
+        font-size: 3.2rem
+        color: $color-dark-blue
+
+.title-second
+    font-family: $font-main
+    font-size: 4rem
+    color: $color-dark-blue
+
+.paragraph
+    font-family: $font-main
+    font-size: 2rem
+    color: $color-dark-blue
+    &_white
+        color: $color-white
+
+.icon
+    font-family: 'social-networks'
+    font-style: normal
+    font-weight: normal
+    font-variant: normal
+    text-transform: none
+    font-size: 5rem
+    line-height: 1
+    
+    &_whatsapp:before
+        content: "\e900"
+
+    &_vkontakte:before 
+        content: "\e901"
+
+    &_telegramm:before 
+        content: "\e902"

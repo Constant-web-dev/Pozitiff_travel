@@ -1,0 +1,63 @@
+@keyframes moveDown
+    from
+        transform: translateY(-100vh)
+        opacity: 0
+    to
+        transform: translateY(0)
+        opacity: 1
+
+@keyframes moveLeft
+    from
+        transform: translateX(100vw)
+        opacity: 0
+    to
+        transform: translateX(0)
+        opacity: 1
+
+@keyframes moveRight
+    from
+        transform: translateX(-100vw)
+        opacity: 0
+    to
+        transform: translateX(0)
+        opacity: 1
+
+@keyframes moveUp
+    from
+        transform: translateY(100vh)
+        opacity: 0
+    to
+        transform: translateY(0)
+        opacity: 1
+
+@keyframes moveUpTextLine
+    from
+        transform: rotate(-90deg) translateX(-100vh)
+        opacity: 0
+    to
+        transform: rotate(-90deg) translateX(0)
+        opacity: 1
+
+@keyframes showUp
+    from
+        opacity: 0
+    to
+        opacity: 1
+
+@keyframes blink
+    from
+        background-position: right
+    to
+        background-position: left
+
+@keyframes moveArrow
+    from
+        clip-path: polygon(90% 0, 100% 50%, 90% 100%, 5% 100%, 10% 50%, 5% 0)
+    to
+        clip-path: polygon(85% 0, 95% 50%, 85% 100%, 0 100%, 5% 50%, 0 0)
+
+@keyframes moveBus
+    from
+        transform: translateX(-100vw)
+    to
+        transform: translateX(0)

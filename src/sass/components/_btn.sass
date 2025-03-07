@@ -1,0 +1,20 @@
+.btn
+    display: block
+    padding: 2rem 4rem
+    
+    &:link, &:visited
+        font-family: $font-main
+        font-size: 2.4rem
+        text-decoration: none
+        text-align: center
+        background: linear-gradient(45deg, #1d2624 0, #1d2624 47%, #fff 50%, #1d2624 53%, #1d2624 100%) no-repeat
+        background-position: left
+        background-size: 200%
+        background-clip: text
+        color: transparent
+        animation: blink 10s ease-out infinite backwards
+
+    &:hover, &:active
+        color: $color-yellow
+        background: rgba($color-dark-blue,0.5)
+        animation: moveArrow 1s ease-out infinite alternate
