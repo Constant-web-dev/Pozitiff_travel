@@ -1,0 +1,33 @@
+.image-square
+    position: relative
+    width: 50rem
+    height: 50rem
+
+    &__figure
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        transition: all .5s $time-function
+        outline: .5rem solid $color-white
+        outline-offset: -2.7rem
+
+        &_1
+            clip-path: polygon(0 0, 45% 0, 10% 100%, 0 100%)
+
+        &_2
+            clip-path: polygon(46% 0, 89% 0, 54% 100%, 11% 100%)
+
+        &_3
+            clip-path: polygon(90% 0, 100% 0, 100% 100%, 55% 100%)
+
+        &:hover 
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)
+            z-index: 10
+
+        &:not(:hover)
+            z-index: 1
+
+    &__img
+        width: 100%
