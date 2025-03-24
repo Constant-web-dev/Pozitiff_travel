@@ -1,0 +1,29 @@
+.rectangle
+    width: 27rem
+    height: 30rem
+    padding: 5rem 3rem
+    display: grid
+    grid-template-rows: 1fr 1fr
+    justify-items: center
+    background: linear-gradient(135deg, rgba($color-white, 0.6) 50%, rgba($color-gray-dark, 0.6) 100%)
+    outline: .5rem solid $color-gray
+    outline-offset: -2.7rem
+    transition: all 1s $time-function
+    z-index: 1
+
+    &:nth-child(odd)
+        background: linear-gradient(225deg, rgba($color-white, 0.6) 50%, rgba($color-gray-dark, 0.6) 100%)
+    
+    &:hover
+        transform: translateY(-.8rem)
+        outline: .5rem solid $color-gray-dark
+
+    img
+        width: 10rem
+        grid-row: 1 / 2
+
+    p
+        grid-row: 2 / 3
+        text-align: center
+        align-self: end
+

@@ -36,6 +36,24 @@
 .about 
     grid-row: about / cards
     grid-column: 1 / -1
+    background: url("../img/about-background.jpg") bottom / cover no-repeat
+    display: grid
+    grid-template-columns: repeat(4, min-content)
+    justify-content: center
+    align-content: center
+    grid-column-gap: 3rem
+    overflow: hidden
+    position: relative
+    
+    &::after // Луч
+        content: ''
+        display: block
+        position: absolute
+        width: 100%
+        height: 100%
+        background: rgba($color-white, .35)
+        clip-path: polygon(41% 0,54% 0,30% 100%,20% 100%)
+
 
 .cards
     grid-row: cards / feedback 
