@@ -1,22 +1,25 @@
 .intro
-    padding: 5rem 5rem
-    position: relative
-    grid-row: intro / about
-    grid-column: full-start / full-end
+    padding: 5rem 0
     display: grid
     grid-template-rows: repeat(2, min-content)
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: minmax(5vh, 1fr) 1fr minmax(1rem, 1fr) 1fr minmax(5vh, 1fr)
     row-gap: 5rem
+    position: relative
     overflow: hidden
+    @media screen and (max-aspect-ratio: 4/3)
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(3, min-content)
 
     &::after // Луч
         content: ''
-        display: block
-        position: absolute
         width: 100%
         height: 100%
+        display: block
+        position: absolute
         background: $color-gray
-        clip-path: polygon(73% 0, 95% 0, 54% 100%, 41% 100%)
+        clip-path: polygon(73% 0, 95% 0, 15% 100%, 5% 100%)
+        @media screen and (max-aspect-ratio: 4/3)
+            clip-path: polygon(60% 0, 100% 0, 25% 100%, 0% 100%)
 
     &__title
         z-index: 1
@@ -26,39 +29,59 @@
 
     &__image-square
         z-index: 1
-        grid-column: 1 / 2
+        grid-column: 2 / 3
         justify-self: center
+        align-self: center
+
+        @media screen and (max-aspect-ratio: 4/3)
+            width: 85vw
+            height: 85vw
+            grid-column: 1 / -1
 
     &__text-box
-        grid-column: 2 / -1
+        grid-column: 4 / 5
         justify-self: center
 
+        @media screen and (max-aspect-ratio: 4/3)
+            width: 85vw
+            height: 85vw
+            grid-column: 1 / -1
+
 .about 
-    grid-row: about / cards
-    grid-column: 1 / -1
-    background: url("../img/about-background.jpg") bottom / cover no-repeat
+    padding: 5rem 0
     display: grid
     grid-template-columns: repeat(4, min-content)
     justify-content: center
     align-content: center
-    grid-column-gap: 3rem
-    overflow: hidden
+    grid-gap: 5rem 4rem
     position: relative
-    
+    background: url("../img/about-background.jpg") bottom / cover no-repeat
+    overflow: hidden
+
+    @media screen and (max-aspect-ratio: 4/3)
+        grid-template-columns: repeat(2, min-content)
+        justify-content: center
+        grid-gap: 5rem
+
     &::after // Луч
         content: ''
-        display: block
-        position: absolute
         width: 100%
         height: 100%
+        display: block
+        position: absolute
         background: rgba($color-white, .35)
-        clip-path: polygon(41% 0,54% 0,30% 100%,20% 100%)
+        clip-path: polygon(5% 0,15% 0,90% 100%,60% 100%)
 
+        @media screen and (max-aspect-ratio: 4/3)
+            clip-path: polygon(0 0,25% 0, 100% 100%,60% 100%)
+
+    &__title
+        grid-column: 1 / -1
+        justify-self: center
+        z-index: 1
 
 .cards
-    padding: 5rem 5rem
-    grid-row: cards / feedbacks
-    grid-column: 1 / -1
+    padding: 5rem 0
     display: grid
     grid-template-rows: repeat(4, min-content)
     grid-template-columns: repeat(3, min-content)
@@ -68,14 +91,21 @@
     position: relative
     overflow: hidden
 
+    @media screen and (max-aspect-ratio: 4/3)
+        grid-template-columns: 100%
+        justify-items: center
+
     &::after // Луч
         content: ''
-        display: block
-        position: absolute
         width: 100%
         height: 100%
+        display: block
+        position: absolute
         background: $color-gray
-        clip-path: polygon(20% 0, 30% 0, 93% 100%, 68% 100%)
+        clip-path: polygon(60% 0, 90% 0, 25% 100%, 10% 100%)
+
+        @media screen and (max-aspect-ratio: 4/3)
+            display: none
 
     &__title
         z-index: 1
@@ -84,28 +114,33 @@
         text-align: center
 
 .feedbacks
-    grid-row: feedbacks / footer
-    grid-column: 1 / -1
+    height: 70vh
+    position: relative
     display: grid
     grid-template-rows: min-content repeat(2, 1fr) 5rem
-    grid-template-columns: repeat(5, 1fr)
-    position: relative
-    grid-gap: 1rem
-    
+    grid-template-columns: 1fr repeat(3, 40rem) 1fr
+    grid-row-gap: 1rem
+
+    @media screen and (max-aspect-ratio: 4/3)
+        height: min-content
+        grid-template-rows: min-content repeat(2, 1fr) .1rem
+        grid-template-columns: 5vw repeat(3, 1fr) 5vw
+        grid-row-gap: 5rem
+
     &::after // Луч
         content: ''
+        width: 100%
+        height: 100%
         display: block
         position: absolute
-        width: 100%
-        height: 100%
         background: rgba($color-white, .35)
-        clip-path: polygon(68% 0, 93% 0, 35% 100%, 20% 100%)
+        clip-path: polygon(10% 0, 25% 0, 90% 100%, 60% 100%)
 
     &__bg-video
-        grid-row: 1 / -1
-        grid-column: 1 / -1
         width: 100%
         height: 100%
+        grid-row: 1 / -1
+        grid-column: 1 / -1
         object-fit: cover
 
     &__bg-gradient
@@ -114,7 +149,7 @@
         width: 100%
         height: 100%
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%)
-    
+
     &__title
         grid-row: 1 / 2
         grid-column: 1 / -1
@@ -124,8 +159,8 @@
     &__first
         grid-row: 2 / 3
         grid-column: 2 / -2
-    
+
     &__second
         grid-row: 3 / 4
         grid-column: 2 / -2
-    
+

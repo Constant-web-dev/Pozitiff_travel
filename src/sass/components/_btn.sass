@@ -13,6 +13,10 @@
         background-clip: text
         color: transparent
         animation: blink 10s ease-out infinite backwards
+        @media screen and (max-aspect-ratio: 4/3)
+            color: $color-yellow
+            background: rgba($color-dark-blue,0.5)
+            animation: moveArrow 1s ease-out infinite alternate
 
     &:hover, &:active
         color: $color-yellow
@@ -23,10 +27,10 @@
     display: block
     padding: 1rem 0
     opacity: 0
-    transition: opacity 2s, font-size .2s
+    transition: opacity 2s, font-size .2s, z-index 2s
     transform: translateX(-.5rem)
     animation: moveLink  1s $time-function infinite alternate
-    z-index: 10
+    z-index: 1
 
     &:link, &:visited
         font-family: $font-main
@@ -34,8 +38,12 @@
         text-decoration: none
         text-align: center
         color: $color-white
+        @media screen and (max-aspect-ratio: 4/3)
+            font-size: 3.45rem
         
     &:hover, &:active
         animation-play-state: paused
         font-size: 2.2rem
         text-decoration: underline
+        @media screen and (max-aspect-ratio: 4/3)
+            font-size: 3.45rem

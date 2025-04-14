@@ -5,10 +5,8 @@
 
 html
     font-weight: bold
-    font-size: 1.111112vh // 10px при view-width = 900 px 
+    font-size: 1.111112vh // 10px при view-height = 900 px 
     background: #fbfbfb
 
-.container
-    display: grid
-    grid-template-rows: [header] 90rem [intro] 70rem [about] 43.5rem [cards] 135rem [feedbacks] 65rem [footer] 27.5rem
-    grid-template-columns: [full-start] repeat(2, minmax(min-content, 1fr)) [full-end]
+    @media screen and (max-aspect-ratio: 4/3)
+        font-size: 1.2vw

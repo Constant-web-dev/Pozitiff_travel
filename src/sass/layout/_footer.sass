@@ -1,33 +1,37 @@
 .footer
-    grid-row: 6 / 7
-    grid-column: full-start / full-end
-    background: url("../img/footer-background.jpg") center / cover no-repeat
+    padding: 2rem 0 4rem
+    grid-gap: 2rem
     display: grid
     grid-template-rows: repeat(2, 1fr)
     position: relative
+    background: url("../img/footer-background.jpg") center / cover no-repeat
     overflow: hidden
+
+    @media screen and (max-aspect-ratio: 4/3)
+        padding: 2rem 0 4rem
+        grid-gap: 2rem
 
     &::after // Луч
         content: ''
-        display: block
-        position: absolute
         width: 100%
         height: 100%
+        display: block
+        position: absolute
         background: rgba($color-white, .35)
-        clip-path: polygon(20% 0, 35% 0, 75% 100%, 47% 100%)
+        clip-path: polygon(60% 0, 90% 0, 57% 100%, 25% 100%)
 
     &__social
+        z-index: 1
         justify-content: center
         grid-row: 1 / 2
         align-self: center
         gap: 5rem
-        z-index: 1
 
     &__logo-link
+        z-index: 1
         grid-row: 2 / -1
         align-self: start
         justify-self: center
-        z-index: 1
 
     &__logo
         height: 10rem
