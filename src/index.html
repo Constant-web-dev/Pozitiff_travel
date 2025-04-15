@@ -63,17 +63,115 @@
             Позволь себе путешествие в горы с pozitifff travel
         </p>
 
-        <div class="header__square">
-            <h1 class = "title-first header__title">
-                <span class="title-first_main header__title-first">Pozitifff</span>
-                <span class="title-first_secondary header__title-secondary">travel</span>
-                <span class="title-first_description header__title-description">Ваш позитивный отдых с максимальным комфортом!</span>
-            </h1>
+        <div class="square header__square">
+            <div class="square__main">
+                <h1 class = "title-first square__title">
+                    <span class="title-first_main square__title-first">Pozitifff</span>
+                    <span class="title-first_secondary square__title-secondary">travel</span>
+                    <span class="title-first_description square__title-description">Ваш позитивный отдых с максимальным комфортом!</span>
+                </h1>
 
-            <img class="header__bus" src="img/bus.svg" alt="микроавтобус">
+                <img class="square__bus" src="img/bus.svg" alt="микроавтобус">
 
-            <div class="header__button-box"> 
-                <a class ="btn header__btn" href="#">Ближайшие туры →</a>
+                <div class="square__button-box"> 
+                    <a class ="btn square__btn" href="#">Ближайшие туры →</a>
+                </div>
+            </div>
+
+            <div class="square__upcoming">
+                <svg class="square__cross">
+                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-cross"></use>
+                </svg>
+
+                <h2 class="title-second square__title-upcoming">Ближайшие туры</h2>
+
+                <a class="tour square__tour" href="#">
+                    <p class="paragraph_max tour__seats">4 места</p>
+
+                    <svg class="tour__icon">
+                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-date"></use>
+                    </svg>
+
+                    <p class="paragraph_max">05.05.2025</p>
+
+                    <svg class="tour__icon">
+                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-location"></use>
+                    </svg>
+
+                    <p class="paragraph_max">Адыгея</p>
+
+                    <svg class="tour__icon">
+                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-routes"></use>
+                    </svg>
+
+                    <p class="paragraph_max">край живописных гор</p>
+
+                    <svg class="tour__icon">
+                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-price"></use>
+                    </svg>
+
+                    <p class="paragraph_max">8000₽</p>
+
+                </a>
+
+                <a class="tour square__tour" href="#">
+                    <p class="paragraph_max tour__seats">мест нет</p>
+
+                    <svg class="tour__icon">
+                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-date"></use>
+                    </svg>
+
+                    <p class="paragraph_max">12.05.2025</p>
+
+                    <svg class="tour__icon">
+                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-location"></use>
+                    </svg>
+
+                    <p class="paragraph_max">Дагестан</p>
+
+                    <svg class="tour__icon">
+                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-routes"></use>
+                    </svg>
+
+                    <p class="paragraph_max">жемчужина Кавказа</p>
+
+                    <svg class="tour__icon">
+                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-price"></use>
+                    </svg>
+
+                    <p class="paragraph_max">10000₽</p>
+
+                </a>
+
+                <a class="tour square__tour" href="#">
+                    <p class="paragraph_max tour__seats">6 мест</p>
+
+                    <svg class="tour__icon">
+                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-date"></use>
+                    </svg>
+
+                    <p class="paragraph_max">19.05.2025</p>
+
+                    <svg class="tour__icon">
+                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-location"></use>
+                    </svg>
+
+                    <p class="paragraph_max">Осетия</p>
+
+                    <svg class="tour__icon">
+                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-routes"></use>
+                    </svg>
+
+                    <p class="paragraph_max">сокровищница истории</p>
+
+                    <svg class="tour__icon">
+                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-price"></use>
+                    </svg>
+
+                    <p class="paragraph_max">14000₽</p>
+
+                </a>
+                
             </div>
         </div>
     </header>
@@ -532,7 +630,6 @@
 
     </footer>
 
-
-
 </body>
+<script src="js/main.js"></script>
 </html>

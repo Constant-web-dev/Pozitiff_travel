@@ -60,59 +60,10 @@
             display: none
 
     &__square
-        padding: 2rem 3rem
-        width: 71rem
-        height: 71rem
-        z-index: 1
         grid-row: 2 / -1
         grid-column: 6 / -3
         justify-self: end
         align-self: center
-        display: grid
-        color: transparent
-        border: 5rem solid transparent
-        border-image: linear-gradient(180deg, #8593a6 0%, #333940 100%)
-        border-image-slice: 1 // Чтобы заданный градиент растянулся по всей границе.
-        animation: moveDown 1.4s $time-function backwards
-
-    &__title
-        grid-column: 1 / 3
-        grid-row: 1 / 2
-        display: grid
-        grid-template-rows: min-content,min-content, 1fr
-
-    &__title-first
-        grid-row: 1 / 2
-        align-self: end
-        justify-self: start
-        animation: moveLeft 2s $time-function 1s backwards
-
-    &__title-secondary
-        grid-row: 2 / 3
-        justify-self: end
-        animation: moveRight 2s $time-function 1s backwards
-
-    &__title-description
-        padding: 0 10rem 0
-        justify-self: center
-        align-self: center
-        text-align: center
-        animation: moveUp 2s $time-function 1s backwards
-
-    &__bus
-        height: 5rem
-        display: block
-        grid-column: 1 / 2
-        align-self: end
-        animation: moveBus 2s $time-function 2s backwards
-
-    &__button-box
-        grid-column: 2 / 3
-        align-self: end
-        justify-self: end
-        position: relative
-        right: -3rem
-        animation: showUp .8s $time-function 3.5s backwards
 
     &__social
         padding: 1.5rem
