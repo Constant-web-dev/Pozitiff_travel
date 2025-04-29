@@ -1,0 +1,45 @@
+.slider
+    width: 85vw
+    height: 80vh
+    position: relative
+    z-index: 1
+    background: white
+    display: grid
+    grid-template-columns: repeat(5, min-content)
+    grid-column-gap: .5vw
+    overflow: hidden
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2)
+
+    @media screen and (max-aspect-ratio: 4/3)
+        height: 85vw
+        width: 85vw
+
+    &__img-box
+        width: inherit
+        height: inherit
+        position: relative
+        animation: slider 40s ease-in-out infinite alternate 
+
+    &__img
+        width: inherit
+        height: inherit
+        position: absolute
+        object-fit: cover
+
+    &__text-box
+        width: 60vw
+        text-align: center
+        position: absolute
+        top: 4rem
+        left: 50%
+        transform: translate(-50%, 0)
+        z-index: 2
+
+    &__border
+        width: inherit
+        height: inherit
+        position: absolute
+        top: 0
+        left: 0
+        outline: .5vw solid white
+        outline-offset: -2.7rem

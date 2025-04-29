@@ -2,13 +2,10 @@
     padding: 5rem 0
     display: grid
     grid-template-rows: repeat(2, min-content)
-    grid-template-columns: minmax(5vh, 1fr) 1fr minmax(1rem, 1fr) 1fr minmax(5vh, 1fr)
     row-gap: 5rem
+    justify-content: center
     position: relative
     overflow: hidden
-    @media screen and (max-aspect-ratio: 4/3)
-        grid-template-columns: 1fr
-        grid-template-rows: repeat(3, min-content)
 
     &::after // Луч
         content: ''
@@ -26,26 +23,6 @@
         grid-column: 1 / -1
         align-self: center
         justify-self: center
-
-    &__image-square
-        z-index: 1
-        grid-column: 2 / 3
-        justify-self: center
-        align-self: center
-
-        @media screen and (max-aspect-ratio: 4/3)
-            width: 85vw
-            height: 85vw
-            grid-column: 1 / -1
-
-    &__text-box
-        grid-column: 4 / 5
-        justify-self: center
-
-        @media screen and (max-aspect-ratio: 4/3)
-            width: 85vw
-            height: 85vw
-            grid-column: 1 / -1
 
 .about 
     padding: 5rem 0
