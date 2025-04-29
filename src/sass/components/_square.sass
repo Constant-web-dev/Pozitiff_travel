@@ -8,18 +8,20 @@
     border-image: linear-gradient(180deg, #8593a6 0%, #333940 100%)
     border-image-slice: 1 // Чтобы заданный градиент растянулся по всей границе.
     animation: moveDown 1.4s $time-function backwards
+    box-shadow: $box-shadow
+
     &__main
         height: 100%
         padding: 2rem 3rem
         display: grid
-    
+
     &__upcoming
         height: 100%
         padding: 2rem 3rem
         display: none
         grid-template-rows: min-content repeat(3, 1fr)
         grid-row-gap: 1.5rem
-    
+
     &__title-upcoming
         text-align: center
         padding: 0
@@ -62,7 +64,7 @@
         position: relative
         right: -3rem
         animation: showUp .8s $time-function 3.5s backwards
-    
+
     &__cross
         position: absolute
         top: 2rem
@@ -81,6 +83,7 @@
     align-items: center
     justify-items: center
     background: rgba($color-white, 0.5)
+    box-shadow: $box-shadow
 
     &:link, &:visited
         text-decoration: none
@@ -94,7 +97,7 @@
         height: 2.5rem
         width: 2.5rem
         fill: $color-dark-blue
-    
+
     &__seats
         width: 17rem
         padding: 1rem 0
@@ -104,4 +107,4 @@
         background: $color-yellow
         transform: skewX(-25deg)
         text-align: center
-        
+        box-shadow: $box-shadow
