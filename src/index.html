@@ -26,6 +26,8 @@
     <meta name="msapplication-TileImage" content="icons/fav-icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <meta name="developer" content="Дизайн и верстка - Константин Любушкин email:Constant-web-dev@yandex.ru">
+    <script type="module" src="js/main.js"></script>
+    <script defer src="js/square.js"></script>
 </head>
 <body>
 
@@ -274,10 +276,22 @@
             <p class="paragraph">сопровождение организатора по всем маршрутам</p>
         </div>
     </div>
+    <div class="trips">
+        <h2 class="title-second trips__title">Направления</h2>
 
-    <div class="cards">
+        <div class="trips__tab-container">
+            <button class="tab trips__tab" data-tab="1">
+                Адыгея
+            </button>
+            <button class="tab trips__tab" data-tab="1">
+                Гуамское ущелье
+            </button>
+        </div>
+    </div>
+
+    <!-- <div class="cards">
         <h2 class="title-second cards__title">Направления</h2>
-        <!-- Абхазия -->
+
         <div class="card" onclick="">
             <img class="card__img" src="img/abkhazia.jpg" alt="">
             <div class="card__overlay"></div>
@@ -312,7 +326,7 @@
             
             <div class="card__box"></div>
         </div>
-        <!-- Адыгея -->
+
         <div class="card" onclick="">
             <img class="card__img" src="img/adygeya.jpg" alt="">
             <div class="card__overlay"></div>
@@ -347,7 +361,7 @@
             
             <div class="card__box"></div>
         </div>
-        <!-- Гуамское ущелье -->
+
         <div class="card" onclick="">
             <img class="card__img" src="img/guamka.jpg" alt="">
             <div class="card__overlay"></div>
@@ -382,7 +396,7 @@
             
             <div class="card__box"></div>
         </div>
-        <!-- Дагестан -->
+
         <div class="card" onclick="">
             <img class="card__img" src="img/dagestan.jpg" alt="">
             <div class="card__overlay"></div>
@@ -417,7 +431,7 @@
             
             <div class="card__box"></div>
         </div>
-        <!-- Дигория -->
+
         <div class="card" onclick="">
             <img class="card__img" src="img/digoria.jpg" alt="">
             <div class="card__overlay"></div>
@@ -452,7 +466,7 @@
             
             <div class="card__box"></div>
         </div>
-        <!-- Кисловодск -->
+
         <div class="card" onclick="">
             <img class="card__img" src="img/kislovodsk.jpg" alt="">
             <div class="card__overlay"></div>
@@ -487,7 +501,7 @@
             
             <div class="card__box"></div>
         </div>
-        <!-- Нальчик -->
+
         <div class="card" onclick="">
             <img class="card__img" src="img/nalchik.jpg" alt="">
             <div class="card__overlay"></div>
@@ -522,7 +536,7 @@
             
             <div class="card__box"></div>
         </div>
-        <!-- Осетия -->
+
         <div class="card" onclick="">
             <img class="card__img" src="img/osetia.jpg" alt="">
             <div class="card__overlay"></div>
@@ -557,7 +571,7 @@
             
             <div class="card__box"></div>
         </div>
-        <!-- Эльбрус -->
+
         <div class="card" onclick="">
             <img class="card__img" src="img/elbrus.jpg" alt="">
             <div class="card__overlay"></div>
@@ -592,7 +606,7 @@
             
             <div class="card__box"></div>
         </div>
-    </div>
+    </div> -->
 
     <div class="feedbacks">
         <!-- видео на задний фон -->
@@ -659,5 +673,5 @@
     </footer>
 
 </body>
-<script src="js/main.js"></script>
+
 </html>
