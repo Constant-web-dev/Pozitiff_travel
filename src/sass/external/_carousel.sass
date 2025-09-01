@@ -1,0 +1,26 @@
+#myCarousel
+    --f-arrow-pos: 1rem
+    --f-arrow-bg: rgba(255,255,255,0.75)
+    --f-arrow-hover-bg: rgba(255,255,255,1)
+    --f-arrow-color: #333
+    --f-arrow-width: 6rem
+    --f-arrow-height: 6rem
+    --f-arrow-svg-width: 4rem
+    --f-arrow-svg-height: 4rem
+    --f-arrow-svg-stroke-width: .2rem
+    --f-arrow-border-radius: 50%
+    height: 56vh
+
+    & .f-carousel__slide
+        display: flex
+        align-items: center
+        justify-content: center
+
+        & img
+            max-width: 100%
+            max-height: 100%
+            height: auto
+
+.f-button.is-arrow
+    @media screen and (max-aspect-ratio: 4/3)
+        display: none

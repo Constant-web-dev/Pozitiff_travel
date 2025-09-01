@@ -1,0 +1,19 @@
+.tab
+    height: 9rem
+    padding: 0.5rem 3.5rem
+    font-size: 2rem
+    font-family: "Shantell Sans"
+    border: none
+    outline: none
+    clip-path: polygon(90% 0, 100% 50%, 90% 100%, 5% 100%, 10% 50%, 5% 0)
+
+    @media screen and (max-aspect-ratio: 4/3)
+        font-size: 2.45rem
+        height: 6rem
+
+    &:hover, &:active, &-active
+        color: $color-yellow
+        background: rgba($color-dark-blue,0.5)
+
+    &:hover, &:active
+        animation: moveArrow 1s ease-out infinite alternate

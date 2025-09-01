@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Pozitifff_travel</title>
-    <meta name="description" content="Туры из Ростова-на-Дону по самым живописным уголкам Краснодарского края, Адыгеи, Кавказа. Отдохните от городской суеты и насладитесь красотой природы. Вас ждут величественные горы, зелёные леса, бурные реки и озёра, а также древние памятники и архитектурные шедевры.">
-    <meta name="keywords" content="туры из Ростова-на-Дону, горы, Кавказ, Адыгея, Абхазия, Гуамское ущелье, Дагестан, Дигория, Кисловодск, Нальчик, Осетия, Эльбрус, Парк Галицкого, путешествия, отдых, поездка в горы,">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.arrows.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.thumbs.css" />
+    <meta name="description"
+        content="Туры из Ростова-на-Дону по самым живописным уголкам Краснодарского края, Адыгеи, Кавказа. Отдохните от городской суеты и насладитесь красотой природы. Вас ждут величественные горы, зелёные леса, бурные реки и озёра, а также древние памятники и архитектурные шедевры.">
+    <meta name="keywords"
+        content="туры из Ростова-на-Дону, горы, Кавказ, Адыгея, Абхазия, Гуамское ущелье, Дагестан, Дигория, Кисловодск, Нальчик, Осетия, Эльбрус, Парк Галицкого, путешествия, отдых, поездка в горы,">
     <link rel="apple-touch-icon" sizes="57x57" href="icons/fav-icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="icons/fav-icons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="icons/fav-icons/apple-icon-72x72.png">
@@ -17,45 +23,44 @@
     <link rel="apple-touch-icon" sizes="144x144" href="icons/fav-icons/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="icons/fav-icons/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="icons/fav-icons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="icons/fav-icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/fav-icons/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icons/fav-icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="icons/fav-icons/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/fav-icons/favicon-16x16.png">
-    <link rel="manifest" href="icons/fav-icons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="icons/fav-icons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <meta name="developer" content="Дизайн и верстка - Константин Любушкин email:Constant-web-dev@yandex.ru">
+    <meta name="robots" content="nofollow, noindex">
+    <meta name="developer" content="Разработка дизайн и вёрстка сайта - Константин Любушкин email:Constant-web-dev@yandex.ru">
     <script type="module" src="js/main.js"></script>
     <script defer src="js/square.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "ha_GmNSJ3u2hSkThp",
+            });
+        })();
+    </script>
 </head>
+
 <body>
 
     <header class="header header_main">
         <div class="header__navigation">
-            
+
             <img class="header__logo" src="img/logo.svg" alt="логотип Pozitifff travel">
-            
-            <nav class="nav header__nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
-                    <li class="nav__item"><span class="nav__separator"></span></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Туры</a></li>
-                    <li class="nav__item"><span class="nav__separator"></span></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
-                </ul>
-            </nav>
 
             <div class="social header__social">
+                <a class="social__link" href="tel:+79614243995">
+                    <span class="icon icon_phone"></span>
+                </a>
+
                 <a class="social__link" href="https://vk.com/pozitifff_travel" target="_blank">
                     <span class="icon icon_vkontakte"></span>
                 </a>
 
-                <a class="social__link" href="https://t.me/pozitifff_story" target="_blank">
-                    <span class="icon icon_telegramm"></span>
-                </a>
-
-                <a class="social__link" href="#" target="_blank">
+                <a class="social__link" href="https://wa.me/79614243995" target="_blank">
                     <span class="icon icon_whatsapp"></span>
                 </a>
             </div>
@@ -65,18 +70,21 @@
             Позволь себе путешествие в горы с pozitifff travel
         </p>
 
+        <img style="display: none;" src="img/main-header-background.jpg" alt="">
+
         <div class="square header__square">
             <div class="square__main">
-                <h1 class = "title-first square__title">
+                <h1 class="title-first square__title">
                     <span class="title-first_main square__title-first">Pozitifff</span>
                     <span class="title-first_secondary square__title-secondary">travel</span>
-                    <span class="title-first_description square__title-description">Ваш позитивный отдых с максимальным комфортом!</span>
+                    <span class="title-first_description square__title-description">Ваш позитивный отдых с максимальным
+                        комфортом!</span>
                 </h1>
 
                 <img class="square__bus" src="img/bus.svg" alt="микроавтобус">
 
-                <div class="square__button-box"> 
-                    <a class ="btn square__btn" href="#">Ближайшие туры →</a>
+                <div class="square__button-box">
+                    <a class="btn square__btn" href="#">Ближайшие туры →</a>
                 </div>
             </div>
 
@@ -87,168 +95,164 @@
 
                 <h2 class="title-second square__title-upcoming">Ближайшие туры</h2>
 
-                <a class="tour square__tour" href="#">
-                    <p class="paragraph_max tour__seats">4 места</p>
+                <div class="square__tour-container">
 
-                    <svg class="tour__icon">
-                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-date"></use>
-                    </svg>
+                    <a class="tour square__tour" href="#">
+                        <p class="paragraph_max tour__seats">4 места</p>
 
-                    <p class="paragraph_max">05.05.2025</p>
+                        <svg class="tour__icon">
+                            <use xlink:href="icons/sprites/symbol-defs.svg#icon-date"></use>
+                        </svg>
 
-                    <svg class="tour__icon">
-                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-location"></use>
-                    </svg>
+                        <p class="paragraph_max">05.05.2025</p>
 
-                    <p class="paragraph_max">Адыгея</p>
+                        <svg class="tour__icon">
+                            <use xlink:href="icons/sprites/symbol-defs.svg#icon-location"></use>
+                        </svg>
 
-                    <svg class="tour__icon">
-                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-routes"></use>
-                    </svg>
+                        <p class="paragraph_max">Адыгея</p>
 
-                    <p class="paragraph_max">край живописных гор</p>
+                        <svg class="tour__icon">
+                            <use xlink:href="icons/sprites/symbol-defs.svg#icon-routes"></use>
+                        </svg>
 
-                    <svg class="tour__icon">
-                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-price"></use>
-                    </svg>
+                        <p class="paragraph_max">край живописных гор</p>
 
-                    <p class="paragraph_max">8000₽</p>
+                        <svg class="tour__icon">
+                            <use xlink:href="icons/sprites/symbol-defs.svg#icon-price"></use>
+                        </svg>
 
-                </a>
+                        <p class="paragraph_max">8000₽</p>
 
-                <a class="tour square__tour" href="#">
-                    <p class="paragraph_max tour__seats">мест нет</p>
+                    </a>
 
-                    <svg class="tour__icon">
-                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-date"></use>
-                    </svg>
+                    <a class="tour square__tour" href="#">
+                        <p class="paragraph_max tour__seats">мест нет</p>
 
-                    <p class="paragraph_max">12.05.2025</p>
+                        <svg class="tour__icon">
+                            <use xlink:href="icons/sprites/symbol-defs.svg#icon-date"></use>
+                        </svg>
 
-                    <svg class="tour__icon">
-                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-location"></use>
-                    </svg>
+                        <p class="paragraph_max">12.05.2025</p>
 
-                    <p class="paragraph_max">Дагестан</p>
+                        <svg class="tour__icon">
+                            <use xlink:href="icons/sprites/symbol-defs.svg#icon-location"></use>
+                        </svg>
 
-                    <svg class="tour__icon">
-                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-routes"></use>
-                    </svg>
+                        <p class="paragraph_max">Дагестан</p>
 
-                    <p class="paragraph_max">жемчужина Кавказа</p>
+                        <svg class="tour__icon">
+                            <use xlink:href="icons/sprites/symbol-defs.svg#icon-routes"></use>
+                        </svg>
 
-                    <svg class="tour__icon">
-                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-price"></use>
-                    </svg>
+                        <p class="paragraph_max">жемчужина Кавказа</p>
 
-                    <p class="paragraph_max">10000₽</p>
+                        <svg class="tour__icon">
+                            <use xlink:href="icons/sprites/symbol-defs.svg#icon-price"></use>
+                        </svg>
 
-                </a>
+                        <p class="paragraph_max">10000₽</p>
 
-                <a class="tour square__tour" href="#">
-                    <p class="paragraph_max tour__seats">6 мест</p>
+                    </a>
 
-                    <svg class="tour__icon">
-                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-date"></use>
-                    </svg>
+                    <a class="tour square__tour" href="#">
+                        <p class="paragraph_max tour__seats">6 мест</p>
 
-                    <p class="paragraph_max">19.05.2025</p>
+                        <svg class="tour__icon">
+                            <use xlink:href="icons/sprites/symbol-defs.svg#icon-date"></use>
+                        </svg>
 
-                    <svg class="tour__icon">
-                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-location"></use>
-                    </svg>
+                        <p class="paragraph_max">19.05.2025</p>
 
-                    <p class="paragraph_max">Осетия</p>
+                        <svg class="tour__icon">
+                            <use xlink:href="icons/sprites/symbol-defs.svg#icon-location"></use>
+                        </svg>
 
-                    <svg class="tour__icon">
-                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-routes"></use>
-                    </svg>
+                        <p class="paragraph_max">Осетия</p>
 
-                    <p class="paragraph_max">сокровищница истории</p>
+                        <svg class="tour__icon">
+                            <use xlink:href="icons/sprites/symbol-defs.svg#icon-routes"></use>
+                        </svg>
 
-                    <svg class="tour__icon">
-                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-price"></use>
-                    </svg>
+                        <p class="paragraph_max">сокровищница истории</p>
 
-                    <p class="paragraph_max">14000₽</p>
+                        <svg class="tour__icon">
+                            <use xlink:href="icons/sprites/symbol-defs.svg#icon-price"></use>
+                        </svg>
 
-                </a>
-                
+                        <p class="paragraph_max">14000₽</p>
+
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
     <div class="intro">
         <h2 class="title-second intro__title">Приключения ждут вас!</h2>
-        
+
         <div class="slider">
             <div class="slider__img-box">
-                <img class="slider__img" alt="слайд 1"
-                    src="img/slide-1.webp" 
-                    srcset="img/slide-1.webp 1500w,
-                    img/slide-1s.webp 1000w"
-                    sizes="(max-aspect-ratio: 4/3) 1000px,
-                    1500px">
-    
+                <picture>
+                    <source media="(max-aspect-ratio: 4/3)" srcset="img/slide-1s.webp">
+                    <img class="slider__img" src="img/slide-1.webp" alt="слайд 1">
+                </picture>
+
                 <p class="paragraph paragraph_max slider__text-box">
-                    Приглашаем вас в незабываемое путешествие из Ростова-на-Дону 
+                    Приглашаем вас в незабываемое путешествие из Ростова-на-Дону
                     по живописным уголкам Краснодарского края, Адыгеи и Кавказа!
                 </p>
             </div>
-    
+
             <div class="slider__img-box">
-                <img class="slider__img" alt="слайд 2"
-                    src="img/slide-2.webp" 
-                    srcset="img/slide-2.webp 1500w,
-                    img/slide-2s.webp 1000w"
-                    sizes="(max-aspect-ratio: 4/3) 1000px,
-                    1500px">
-                <p class="paragraph paragraph_max slider__text-box">
-                    Наши программы созданы для тех, кто ценит природу и мечтает 
-                    насладиться свежим воздухом и великолепными пейзажами.
-                </p>
+                <picture>
+                    <source media="(max-aspect-ratio: 4/3)" srcset="img/slide-2s.webp">
+                    <img class="slider__img" src="img/slide-2.webp" alt="слайд 2">
+                    </pictureclass=>
+
+                    <p class="paragraph paragraph_max slider__text-box">
+                        Наши программы созданы для тех, кто ценит природу и мечтает
+                        насладиться свежим воздухом и великолепными пейзажами.
+                    </p>
             </div>
-    
+
             <div class="slider__img-box">
-                <img class="slider__img" alt="слайд 3"
-                    src="img/slide-3.webp" 
-                    srcset="img/slide-3.webp 1500w,
-                    img/slide-3s.webp 1000w"
-                    sizes="(max-aspect-ratio: 4/3) 1000px,
-                    1500px">
-                <p class="paragraph paragraph_max slider__text-box">
-                    Вас ждут незабываемые приключения в горах! Вы окунётесь в мир нетронутой 
-                    природы, откроете для себя новые маршруты и увидите потрясающие виды.
-                </p>
+                <picture>
+                    <source media="(max-aspect-ratio: 4/3)" srcset="img/slide-3s.webp">
+                    <img class="slider__img" src="img/slide-3.webp" alt="слайд 3">
+                    </picture=>
+
+                    <p class="paragraph paragraph_max slider__text-box">
+                        Вас ждут незабываемые приключения в горах! Вы окунётесь в мир нетронутой
+                        природы, откроете для себя новые маршруты и увидите потрясающие виды.
+                    </p>
             </div>
-    
+
             <div class="slider__img-box">
-                <img class="slider__img" alt="слайд 4"
-                    src="img/slide-4.webp" 
-                    srcset="img/slide-4.webp 1500w,
-                    img/slide-4s.webp 1000w"
-                    sizes="(max-aspect-ratio: 4/3) 1000px,
-                    1500px">
-                <p class="paragraph paragraph_max slider__text-box">
-                    Вас ждут величественные горы, густые леса, бурные реки и озёра, древние памятники 
-                    и архитектурные шедевры.
-                </p>
+                <picture>
+                    <source media="(max-aspect-ratio: 4/3)" srcset="img/slide-4s.webp">
+                    <img class="slider__img" src="img/slide-4.webp" alt="слайд 4">
+                    </pictures=>
+
+                    <p class="paragraph paragraph_max slider__text-box">
+                        Вас ждут величественные горы, густые леса, бурные реки и озёра, древние памятники
+                        и архитектурные шедевры.
+                    </p>
             </div>
-    
+
             <div class="slider__img-box">
-                <img class="slider__img" alt="слайд 5"
-                    src="img/slide-5.jpg" 
-                    srcset="img/slide-5.jpg 1500w,
-                    img/slide-5s.webp 1000w"
-                    sizes="(max-aspect-ratio: 4/3) 1000px,
-                    1500px">
-                <p class="paragraph paragraph_max slider__text-box">
-                    Забудьте о городской суете! С нами вы сможете отдохнуть и восстановить силы, 
-                    не дожидаясь отпуска. Всего за два-три дня вы получите заряд позитива и энергии, 
-                    который будет поддерживать вас долгое время.
-                </p>
+                <picture>
+                    <source media="(max-aspect-ratio: 4/3)" srcset="img/slide-5s.webp">
+                    <img class="slider__img" src="img/slide-5.webp" alt="слайд 5">
+                    </pictureclass=>
+
+                    <p class="paragraph paragraph_max slider__text-box">
+                        Забудьте о городской суете! С нами вы сможете отдохнуть и восстановить силы,
+                        не дожидаясь отпуска. Всего за два-три дня вы получите заряд позитива и энергии,
+                        который будет поддерживать вас долгое время.
+                    </p>
             </div>
-    
+
             <div class="slider__border"></div>
         </div>
     </div>
@@ -276,337 +280,121 @@
             <p class="paragraph">сопровождение организатора по всем маршрутам</p>
         </div>
     </div>
+
+    <div class="cards">
+        <h2 class="title-second cards__title">Направления</h2>
+
+        <div class="cards__cards-container"></div>
+
+    </div>
+
     <div class="trips">
-        <h2 class="title-second trips__title">Направления</h2>
+        <h2 class="title-second trips__title">Маршруты</h2>
 
         <div class="trips__tab-container">
-            <button class="tab trips__tab" data-tab="1">
+            <button class="tab tab-active" data-tab="1">
                 Адыгея
             </button>
-            <button class="tab trips__tab" data-tab="1">
+            <button class="tab" data-tab="1">
                 Гуамское ущелье
             </button>
         </div>
+
+        <div class="trip trips__trip">
+            <img class="trip__img" src="img/slide-1.webp" alt="">
+            <div class="trip__shadow"></div>
+            <div class="trip__button-box">
+                <button class="trip__button trip__button-active" data-type="info">
+                    <svg class="trip__icon">
+                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-info"></use>
+                    </svg>
+                </button>
+
+                <button class="trip__button" data-type="routes">
+                    <svg class="trip__icon">
+                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-routes"></use>
+                    </svg>
+                </button>
+
+                <button class="trip__button" data-type="images">
+                    <svg class="trip__icon">
+                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-images"></use>
+                    </svg>
+                </button>
+
+                <button class="trip__button" data-type="book">
+                    <svg class="trip__icon">
+                        <use xlink:href="icons/sprites/symbol-defs.svg#icon-book"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="trip__content-box">
+
+                <div class="info hidden"></div>
+
+                <div class="routes hidden">
+                    <h2 class="title-second title-second_white routes__title">
+                        Что нас ждёт
+                    </h2>
+
+                    <div class="routes__places-container"></div>
+
+                    <h2 class="title-second title-second_white routes__title">
+                        По желанию (доп.)
+                    </h2>
+
+                    <div class="routes__options-container"></div>
+                </div>
+
+                <div class="gallery hidden ">
+
+                    <div class="f-carousel" id="myCarousel"></div>
+                </div>
+
+                <div class="book hidden">
+                    <h2 class="title-second title-second_white book__title">
+                        Забронировать тур
+                    </h2>
+
+
+                    <form class="form" autocomplete="off">
+                        <div class="form__group">
+                            <label class="form__label" for="name">Ваше имя</label>
+
+                            <svg class="form__icon">
+                                <use xlink:href="icons/sprites/symbol-defs.svg#icon-user"></use>
+                            </svg>
+
+                            <input class="form__input" type="text" id="name" pattern=".{2,}" title="Минимум 2 символа"
+                                name="name" placeholder="" required>
+
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label" for="phone">Номер телефона</label>
+
+                            <svg class="form__icon">
+                                <use xlink:href="icons/sprites/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+
+                            <input class="form__input" type="tel" id="phone" pattern="^(\+7|7|8|){0,1}9[0-9]{9}$"
+                                title="Допустимый формат: +79XXXXXXXXX, 89XXXXXXXXX, 9XXXXXXXXX" name="phone"
+                                placeholder="" required>
+
+                        </div>
+
+                        <button class="form__btn" type="submit">Забронировать</button>
+                    </form>
+
+                </div>
+
+                <div class="book-info">
+
+                </div>
+
+            </div>
+        </div>
     </div>
-
-    <!-- <div class="cards">
-        <h2 class="title-second cards__title">Направления</h2>
-
-        <div class="card" onclick="">
-            <img class="card__img" src="img/abkhazia.jpg" alt="">
-            <div class="card__overlay"></div>
-
-            <h3 class="title-third card__title">Абхазия</h3>
-
-            <div class="card__content-box card__content-box_1">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-routes"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">варианты<br>маршрута:</p>
-                <p class="paragraph paragraph_white card__paragraph">1</p>
-            </div>
-
-            <div class="card__content-box card__content-box_2">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-duration"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">продолжительность<br>тура (дней):</p>
-                <p class="paragraph paragraph_white card__paragraph">2</p>
-            </div>
-
-            <div class="card__content-box card__content-box_3">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-date"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">ближайшая<br>дата:</p>
-                <p class="paragraph paragraph_white card__paragraph">22.12</p>
-            </div>
-            
-            <a class ="btn-2 card__btn" href="#">подробнее →</a>
-            
-            <div class="card__box"></div>
-        </div>
-
-        <div class="card" onclick="">
-            <img class="card__img" src="img/adygeya.jpg" alt="">
-            <div class="card__overlay"></div>
-
-            <h3 class="title-third card__title">Адыгея</h3>
-
-            <div class="card__content-box card__content-box_1">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-routes"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">варианты<br>маршрута:</p>
-                <p class="paragraph paragraph_white card__paragraph">1</p>
-            </div>
-
-            <div class="card__content-box card__content-box_2">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-duration"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">продолжительность<br>тура (дней):</p>
-                <p class="paragraph paragraph_white card__paragraph">2</p>
-            </div>
-
-            <div class="card__content-box card__content-box_3">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-date"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">ближайшая<br>дата:</p>
-                <p class="paragraph paragraph_white card__paragraph">22.12</p>
-            </div>
-            
-            <a class ="btn-2 card__btn" href="#">подробнее →</a>
-            
-            <div class="card__box"></div>
-        </div>
-
-        <div class="card" onclick="">
-            <img class="card__img" src="img/guamka.jpg" alt="">
-            <div class="card__overlay"></div>
-
-            <h3 class="title-third card__title">Гуамское<br>ущелье</h3>
-
-            <div class="card__content-box card__content-box_1">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-routes"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">варианты<br>маршрута:</p>
-                <p class="paragraph paragraph_white card__paragraph">1</p>
-            </div>
-
-            <div class="card__content-box card__content-box_2">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-duration"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">продолжительность<br>тура (дней):</p>
-                <p class="paragraph paragraph_white card__paragraph">2</p>
-            </div>
-
-            <div class="card__content-box card__content-box_3">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-date"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">ближайшая<br>дата:</p>
-                <p class="paragraph paragraph_white card__paragraph">22.12</p>
-            </div>
-            
-            <a class ="btn-2 card__btn" href="#">подробнее →</a>
-            
-            <div class="card__box"></div>
-        </div>
-
-        <div class="card" onclick="">
-            <img class="card__img" src="img/dagestan.jpg" alt="">
-            <div class="card__overlay"></div>
-
-            <h3 class="title-third card__title">Дагестан</h3>
-
-            <div class="card__content-box card__content-box_1">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-routes"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">варианты<br>маршрута:</p>
-                <p class="paragraph paragraph_white card__paragraph">1</p>
-            </div>
-
-            <div class="card__content-box card__content-box_2">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-duration"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">продолжительность<br>тура (дней):</p>
-                <p class="paragraph paragraph_white card__paragraph">2</p>
-            </div>
-
-            <div class="card__content-box card__content-box_3">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-date"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">ближайшая<br>дата:</p>
-                <p class="paragraph paragraph_white card__paragraph">22.12</p>
-            </div>
-            
-            <a class ="btn-2 card__btn" href="#">подробнее →</a>
-            
-            <div class="card__box"></div>
-        </div>
-
-        <div class="card" onclick="">
-            <img class="card__img" src="img/digoria.jpg" alt="">
-            <div class="card__overlay"></div>
-
-            <h3 class="title-third card__title">Дигория</h3>
-
-            <div class="card__content-box card__content-box_1">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-routes"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">варианты<br>маршрута:</p>
-                <p class="paragraph paragraph_white card__paragraph">1</p>
-            </div>
-
-            <div class="card__content-box card__content-box_2">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-duration"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">продолжительность<br>тура (дней):</p>
-                <p class="paragraph paragraph_white card__paragraph">2</p>
-            </div>
-
-            <div class="card__content-box card__content-box_3">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-date"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">ближайшая<br>дата:</p>
-                <p class="paragraph paragraph_white card__paragraph">22.12</p>
-            </div>
-            
-            <a class ="btn-2 card__btn" href="#">подробнее →</a>
-            
-            <div class="card__box"></div>
-        </div>
-
-        <div class="card" onclick="">
-            <img class="card__img" src="img/kislovodsk.jpg" alt="">
-            <div class="card__overlay"></div>
-
-            <h3 class="title-third card__title">Кисловодск</h3>
-
-            <div class="card__content-box card__content-box_1">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-routes"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">варианты<br>маршрута:</p>
-                <p class="paragraph paragraph_white card__paragraph">1</p>
-            </div>
-
-            <div class="card__content-box card__content-box_2">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-duration"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">продолжительность<br>тура (дней):</p>
-                <p class="paragraph paragraph_white card__paragraph">2</p>
-            </div>
-
-            <div class="card__content-box card__content-box_3">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-date"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">ближайшая<br>дата:</p>
-                <p class="paragraph paragraph_white card__paragraph">22.12</p>
-            </div>
-            
-            <a class ="btn-2 card__btn" href="#">подробнее →</a>
-            
-            <div class="card__box"></div>
-        </div>
-
-        <div class="card" onclick="">
-            <img class="card__img" src="img/nalchik.jpg" alt="">
-            <div class="card__overlay"></div>
-
-            <h3 class="title-third card__title">Нальчик</h3>
-
-            <div class="card__content-box card__content-box_1">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-routes"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">варианты<br>маршрута:</p>
-                <p class="paragraph paragraph_white card__paragraph">1</p>
-            </div>
-
-            <div class="card__content-box card__content-box_2">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-duration"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">продолжительность<br>тура (дней):</p>
-                <p class="paragraph paragraph_white card__paragraph">2</p>
-            </div>
-
-            <div class="card__content-box card__content-box_3">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-date"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">ближайшая<br>дата:</p>
-                <p class="paragraph paragraph_white card__paragraph">22.12</p>
-            </div>
-            
-            <a class ="btn-2 card__btn" href="#">подробнее →</a>
-            
-            <div class="card__box"></div>
-        </div>
-
-        <div class="card" onclick="">
-            <img class="card__img" src="img/osetia.jpg" alt="">
-            <div class="card__overlay"></div>
-
-            <h3 class="title-third card__title">Осетия</h3>
-
-            <div class="card__content-box card__content-box_1">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-routes"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">варианты<br>маршрута:</p>
-                <p class="paragraph paragraph_white card__paragraph">1</p>
-            </div>
-
-            <div class="card__content-box card__content-box_2">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-duration"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">продолжительность<br>тура (дней):</p>
-                <p class="paragraph paragraph_white card__paragraph">2</p>
-            </div>
-
-            <div class="card__content-box card__content-box_3">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-date"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">ближайшая<br>дата:</p>
-                <p class="paragraph paragraph_white card__paragraph">22.12</p>
-            </div>
-            
-            <a class ="btn-2 card__btn" href="#">подробнее →</a>
-            
-            <div class="card__box"></div>
-        </div>
-
-        <div class="card" onclick="">
-            <img class="card__img" src="img/elbrus.jpg" alt="">
-            <div class="card__overlay"></div>
-
-            <h3 class="title-third card__title">Эльбрус</h3>
-
-            <div class="card__content-box card__content-box_1">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-routes"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">варианты<br>маршрута:</p>
-                <p class="paragraph paragraph_white card__paragraph">1</p>
-            </div>
-
-            <div class="card__content-box card__content-box_2">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-duration"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">продолжительность<br>тура (дней):</p>
-                <p class="paragraph paragraph_white card__paragraph">2</p>
-            </div>
-
-            <div class="card__content-box card__content-box_3">
-                <svg class="card__icon">
-                    <use xlink:href="icons/sprites/symbol-defs.svg#icon-date"></use>
-                </svg>
-                <p class="paragraph paragraph_white card__paragraph">ближайшая<br>дата:</p>
-                <p class="paragraph paragraph_white card__paragraph">22.12</p>
-            </div>
-            
-            <a class ="btn-2 card__btn" href="#">подробнее →</a>
-            
-            <div class="card__box"></div>
-        </div>
-    </div> -->
 
     <div class="feedbacks">
         <!-- видео на задний фон -->
@@ -628,20 +416,20 @@
             </div>
 
             <p class="paragraph feedback__text">
-                Замечательное путешествие! Давно хотелось побывать в Архызе, 
-                настоящей горной сказке. Маршруты продуманы по мере насыщенности 
-                впечатлениями! Бурные реки, водопады и вершины. Остались самые яркие 
-                и незабываемые ощущения ! Обязательно отправимся в новый поход за новыми 
+                Замечательное путешествие! Давно хотелось побывать в Архызе,
+                настоящей горной сказке. Маршруты продуманы по мере насыщенности
+                впечатлениями! Бурные реки, водопады и вершины. Остались самые яркие
+                и незабываемые ощущения ! Обязательно отправимся в новый поход за новыми
                 впечатлениями и только с вами!
             </p>
         </div>
 
         <div class="feedback feedbacks__second">
             <p class="paragraph feedback__text">
-                Наденька, спасибо за чудесную организацию. Теперь в моей копилке еще одни 
-                незабываемые впечатления! Всего пара дней в окружении отличной компании 
-                и горных вершин заряжают на долгое время вперед. 
-                Жду с нетерпением следующую возможность открывать с вами новые места, 
+                Наденька, спасибо за чудесную организацию. Теперь в моей копилке еще одни
+                незабываемые впечатления! Всего пара дней в окружении отличной компании
+                и горных вершин заряжают на долгое время вперед.
+                Жду с нетерпением следующую возможность открывать с вами новые места,
                 завораживающие уголки природы.
             </p>
 
@@ -654,23 +442,29 @@
 
     <footer class="footer">
         <div class="social footer__social">
+            <a class="social__link" href="tel:+79614243995">
+                <span class="icon icon_phone"></span>
+            </a>
+
             <a class="social__link" href="https://vk.com/pozitifff_travel" target="_blank">
                 <span class="icon icon_vkontakte"></span>
             </a>
 
-            <a class="social__link" href="https://t.me/pozitifff_story" target="_blank">
-                <span class="icon icon_telegramm"></span>
-            </a>
-
-            <a class="social__link" href="#" target="_blank">
+            <a class="social__link" href="https://chat.whatsapp.com/E0gYGCRKoWR6HClx5LKxG5" target="_blank">
                 <span class="icon icon_whatsapp"></span>
             </a>
         </div>
-        <a class="footer__logo-link"href="index.html">
+        <a class="footer__logo-link" href="index.html">
             <img class="footer__logo" src="img/logo.svg" alt="логотип Pozitifff travel">
         </a>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.lazyload.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.arrows.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/carousel/carousel.thumbs.umd.js"></script>
 
 </body>
 

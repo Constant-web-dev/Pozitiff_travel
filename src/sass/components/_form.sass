@@ -1,0 +1,72 @@
+.form
+    width: 54rem
+
+    &__group
+        margin-bottom: 2rem
+        width: 100%
+        position: relative
+
+    &__input
+        padding: 1rem 2rem 0.7rem 10rem
+        width: 100%
+        font-size: 3.2rem
+        border: none
+        border-bottom: .3rem solid transparent
+        background: $form-color-field
+        color: $form-color-textfield
+        caret-color: $form-color-textfield // цвет каретки
+
+        &:focus
+            outline: none // сброс рамки при фокусе
+            border-bottom-color: $form-field-succes
+            box-shadow: 0 4px 4px rgba(0,0,0,0.3)
+
+        &:focus:invalid
+            border-bottom-color: $form-field-error
+
+        &:autofill, &:autofill:hover, &:autofill:focus, &:autofill:active
+            box-shadow: 0 0 0px 30px $form-color-field inset !important // цвет фона при автозаполнении браузером
+            border-bottom: .3rem solid $form-color-field // цвет нижней рамки
+            -webkit-text-fill-color: $form-color-textfield // цвет текста при автозаполнении
+
+        &::spelling-error
+            color: $form-color-textfield // цвет при орфографических ошибках
+            text-decoration: none // декор при ошибках в орфографии
+
+    &__label
+        display: block
+        font-family: $font-main
+        font-size: 3.2rem
+        color: $form-color-textfield
+        text-align: center
+
+    &__icon
+        width: 4rem
+        height: 4rem
+        position: absolute
+        top: 5.2rem
+        left: 1rem
+        fill: $color-white
+
+    &__btn
+        margin: 6rem auto
+        width: 100%
+        display: block
+        position: relative
+        font-size: 3.2rem
+        padding: 1rem 2rem
+        border: none
+        font-family: $font-main
+        color: $color-dark-blue
+        background-color: $color-yellow
+        transition: all .2s
+
+        &:disabled
+            background-color: $color-gray
+
+        &:hover:not(:disabled)
+            transform: translateY(-0.1rem)
+            cursor: pointer
+
+        &:active:not(:disabled)
+            transform: translateY(0.1rem)
